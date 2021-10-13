@@ -1,0 +1,54 @@
+.carlist-container {
+	position: relative;
+}
+
+.carlist-container .carlist-overlay {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba( 0,0,0,.4 );
+	z-index: 999;
+}
+
+.carlist-container .carlist-overlay.show {
+	display: block;
+}
+
+.carlist-container .carlist-filters {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.carlist-content .carlist-item {
+	background: #f0f0f0;
+	padding: 20px;
+	text-align: center;
+	color: #fff;
+}
+
+.carlist-content .carlist-item .clarlist-info {
+	display: flex;
+	justify-content: space-between;
+}
+
+.carlist-content .carlist-item + .carlist-item {
+	margin-top: 30px;
+}
+
+.carlist-content .carlist-item .carlist-title {
+	margin-bottom: 20px;
+	background: #AEAEAE;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.carlist-content .carlist-item .clarlist-info > div {
+	width: 30%;
+	background: #3B3B3B;
+	padding: 5px;
+}
